@@ -2,7 +2,7 @@
 
 namespace Paytic\Payments\PlatiOnline;
 
-use ByTIC\Omnipay\PlatiOnline\Gateway as AbstractGateway;
+use Paytic\Omnipay\PlatiOnline\Gateway as AbstractGateway;
 use ByTIC\Payments\Gateways\Providers\AbstractGateway\Traits\GatewayTrait;
 use ByTIC\Payments\Gateways\Providers\AbstractGateway\Traits\OverwriteServerCompletePurchaseTrait;
 

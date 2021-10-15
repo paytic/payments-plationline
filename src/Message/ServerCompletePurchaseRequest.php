@@ -2,7 +2,7 @@
 
 namespace Paytic\Payments\PlatiOnline\Message;
 
-use ByTIC\Omnipay\PlatiOnline\Message\ServerCompletePurchaseRequest as AbstractServerCompletePurchaseRequest;
+use Paytic\Omnipay\PlatiOnline\Message\ServerCompletePurchaseRequest as AbstractServerCompletePurchaseRequest;
 use ByTIC\Payments\Gateways\Providers\AbstractGateway\Message\Traits\HasModelRequest;
 
 /**

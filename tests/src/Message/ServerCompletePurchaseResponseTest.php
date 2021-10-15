@@ -2,8 +2,8 @@
 
 namespace Paytic\Payments\PlatiOnline\Tests\Message;
 
-use ByTIC\Payments\Gateways\Providers\PlatiOnline\Message\ServerCompletePurchaseRequest;
-use ByTIC\Payments\Gateways\Providers\PlatiOnline\Message\ServerCompletePurchaseResponse;
+use Paytic\Payments\PlatiOnline\Message\ServerCompletePurchaseRequest;
+use Paytic\Payments\PlatiOnline\Message\ServerCompletePurchaseResponse;
 use ByTIC\Payments\Tests\AbstractTest;
 use ByTIC\Payments\Tests\Fixtures\Records\Purchases\PurchasableRecord;
 use ByTIC\Payments\Tests\Fixtures\Records\Purchases\PurchasableRecordManager;

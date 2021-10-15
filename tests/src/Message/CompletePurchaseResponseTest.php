@@ -2,8 +2,8 @@
 
 namespace Paytic\Payments\PlatiOnline\Tests\Message;
 
-use ByTIC\Payments\Gateways\Providers\PlatiOnline\Message\CompletePurchaseRequest;
-use ByTIC\Payments\Gateways\Providers\PlatiOnline\Message\CompletePurchaseResponse;
+use Paytic\Payments\PlatiOnline\Message\CompletePurchaseRequest;
+use Paytic\Payments\PlatiOnline\Message\CompletePurchaseResponse;
 use ByTIC\Payments\Tests\AbstractTest;
 use ByTIC\Payments\Tests\Gateways\Message\CompletePurchaseResponseTestTrait;
 use Symfony\Component\HttpFoundation\Request;
