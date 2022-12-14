@@ -1,13 +1,14 @@
 <?php
+declare(strict_types=1);
 
 namespace Paytic\Payments\PlatiOnline\Tests\Message;
 
 use Paytic\Payments\PlatiOnline\Message\ServerCompletePurchaseRequest;
 use Paytic\Payments\PlatiOnline\Message\ServerCompletePurchaseResponse;
-use ByTIC\Payments\Tests\AbstractTest;
-use ByTIC\Payments\Tests\Fixtures\Records\Purchases\PurchasableRecord;
-use ByTIC\Payments\Tests\Fixtures\Records\Purchases\PurchasableRecordManager;
-use ByTIC\Payments\Tests\Gateways\Message\ServerCompletePurchaseResponseTrait;
+use Paytic\Payments\Tests\AbstractTest;
+use Paytic\Payments\Tests\Fixtures\Records\Purchases\PurchasableRecord;
+use Paytic\Payments\Tests\Fixtures\Records\Purchases\PurchasableRecordManager;
+use Paytic\Payments\Tests\Gateways\Message\ServerCompletePurchaseResponseTrait;
 use Symfony\Component\HttpFoundation\Request;
 
 /**

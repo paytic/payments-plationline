@@ -1,9 +1,10 @@
 <?php
+declare(strict_types=1);
 
 namespace Paytic\Payments\PlatiOnline\Message;
 
 use Paytic\Omnipay\PlatiOnline\Message\ServerCompletePurchaseRequest as AbstractServerCompletePurchaseRequest;
-use ByTIC\Payments\Gateways\Providers\AbstractGateway\Message\Traits\HasModelRequest;
+use Paytic\Payments\Gateways\Providers\AbstractGateway\Message\Traits\HasModelRequest;
 
 /**
  * Class ServerCompletePurchaseRequest
@@ -21,7 +22,7 @@ class ServerCompletePurchaseRequest extends AbstractServerCompletePurchaseReques
     {
         $return = parent::parseNotification();
         if ($return->f_order_number) {
-            $model = $this->findModel($return->f_order_number);
+            $model = $this->findModel((string) $return->f_order_number);
             if (is_object($model)) {
                 $this->setModel($model);
             }

@@ -1,11 +1,10 @@
 <?php
+declare(strict_types=1);
 
 namespace Paytic\Payments\PlatiOnline\Message;
 
 use Paytic\Omnipay\PlatiOnline\Message\CompletePurchaseRequest as AbstractCompletePurchaseRequest;
-use ByTIC\Payments\Gateways\Providers\AbstractGateway\Message\Traits\HasModelRequest;
-use Paytic\Payments\PlatiOnline\Gateway;
-use ByTIC\Payments\Models\Purchase\Traits\IsPurchasableModelTrait;
+use Paytic\Payments\Gateways\Providers\AbstractGateway\Message\Traits\HasModelRequest;
 
 /**
  * Class PurchaseResponse
