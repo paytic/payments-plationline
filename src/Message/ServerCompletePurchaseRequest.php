@@ -21,6 +21,7 @@ class ServerCompletePurchaseRequest extends AbstractServerCompletePurchaseReques
     protected function parseNotification()
     {
         $return = parent::parseNotification();
+        $return = json_decode(json_encode($return));
         if ($return->f_order_number) {
             $model = $this->findModel((string) $return->f_order_number);
             if (is_object($model)) {
